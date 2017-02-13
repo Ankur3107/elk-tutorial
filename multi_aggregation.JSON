@@ -1,0 +1,23 @@
+{
+  "size": 0,
+  "aggs": {
+    "price-statistics": {
+      "stats": {
+        "field": "price"
+      }
+    },
+    "popular-color":{
+      "terms": {
+        "field": "color.keyword"
+      },
+      "aggs": {
+        "avg-price-per-color": {
+          "avg": {
+            "field": "price"
+          }
+        }
+      }
+    }
+  }
+}
+

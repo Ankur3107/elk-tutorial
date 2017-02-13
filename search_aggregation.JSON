@@ -1,0 +1,14 @@
+{
+  "query": {
+    "match": {
+      "title": "dog"
+    }
+  },
+  "aggs": {
+    "popular-colors": {
+      "terms": {
+        "field": "color.keyword"
+      }
+    }
+  }
+}

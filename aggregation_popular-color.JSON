@@ -1,0 +1,10 @@
+{
+  "size": 0,
+  "aggs": {
+    "popular-colors": {
+      "terms": {
+        "field": "color.keyword"
+      }
+    }
+  }
+}
