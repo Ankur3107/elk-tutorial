@@ -1,0 +1,19 @@
+{
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "match": {
+            "title": "quick"
+          }
+        },
+        {
+          "match_phrase": {
+            "title": "lazy dog"
+          }
+        }
+      ]
+    }
+  }
+}
+
