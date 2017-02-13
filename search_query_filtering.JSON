@@ -1,0 +1,22 @@
+{
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "match": {
+            "title": "dog"
+          }
+        }
+      ],
+      "filter": {
+        "range": {
+          "price": {
+            "gte": 5,
+            "lte": 10
+          }
+        }
+      }
+    }
+  }
+}
+
